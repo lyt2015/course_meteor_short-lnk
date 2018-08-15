@@ -35,7 +35,7 @@ export default class LinkListItem extends React.Component {
         ? `(visited ${moment(this.props.lastVisitedAt).fromNow()})`
         : ''
     return (
-      <p>
+      <p className="item__message">
         {this.props.visitedCount} {visitMessage} {lastVisitMessage}
       </p>
     )
@@ -43,9 +43,10 @@ export default class LinkListItem extends React.Component {
 
   render() {
     return (
-      <div>
-        <p>{this.props.url}</p>
-        <p>Visible: {this.props.visible ? 'true' : 'false'}</p>
+      <div className="item">
+        <h2>{this.props.url}</h2>
+        {/* <p>Visible: {this.props.visible ? 'true' : 'false'}</p> */}
+        <p className="item__message">{this.props.shortUrl}</p>
         {this.renderStats()}
         <a className="button button--link button--pill" target="_blank" href={this.props.shortUrl}>
           Visit

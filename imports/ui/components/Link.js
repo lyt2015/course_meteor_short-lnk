@@ -36,9 +36,11 @@ export default class Link extends React.Component {
     return (
       <div>
         <PrivateHeader title={`Links created by ${this.state.address}`} />
-        <LinkListFilters />
-        <AddLink />
-        <LinkList />
+        <div className="page-content">
+          <LinkListFilters />
+          <AddLink />
+          <LinkList />
+        </div>
       </div>
     )
   }
