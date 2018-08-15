@@ -5,6 +5,7 @@ $primary-color: #5b4681;
 // Sizes
 $xs-size: 1rem;
 $small-size: 1.4rem;
+$site-max-width: 50rem;
 
 // Font sizes
 $base-font-size: 1.4rem;
@@ -25,3 +26,6 @@ $button-secondary-bg: #f9f9f9;
 $button-secondary-border-color: $light-grey;
 $button-secondary-color: #777;
 
+// Header
+$header-bg: $primary-color;
+$header-color: white;
